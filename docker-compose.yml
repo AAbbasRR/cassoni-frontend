@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  react:
+    image: cassoni_front
+    container_name: cassoni_front
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    restart: always
+    ports:
+      - "8086:80"
