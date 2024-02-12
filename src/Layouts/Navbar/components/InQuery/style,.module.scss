@@ -1,0 +1,42 @@
+.dialogHeader {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+
+  &__icon {
+    font-size: 1.5rem !important;
+  }
+
+  &__title {
+    font-size: 1.2rem !important;
+  }
+}
+
+.dialogContent {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  &__input {
+    width: 100%;
+
+    label {
+      font-size: 0.85rem !important;
+    }
+
+    div {
+      height: 4rem !important;
+    }
+
+    p{
+        font-size: 0.65rem !important;
+    }
+  }
+}
+
+.dialogFooter {
+  padding: 1.5rem 2rem !important;
+  display: flex;
+}

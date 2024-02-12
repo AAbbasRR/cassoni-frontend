@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+@import url("./Fonts.css");
+
+* {
+  box-sizing: border-box !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+::after,
+::before {
+  font-family: LemonMilkLight !important;
+  font-size: 0.9rem !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0px !important;
+  padding: 0px !important;
+  background-color: #f6f5f3 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.font_bold {
+  font-family: LemonMilkBold !important;
 }
 
-.App-link {
-  color: #61dafb;
+.font_light {
+  font-family: LemonMilkLight !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.font_regular {
+  font-family: LemonMilkRegular !important;
 }

@@ -1,0 +1,26 @@
+@font-face {
+  font-family: LemonMilkBold;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  src: url("assets/fonts/lemonmilk_bold.otf");
+}
+
+@font-face {
+  font-family: LemonMilkLight;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  src: url("assets/fonts/lemonmilk_light.otf");
+}
+
+@font-face {
+  font-family: LemonMilkRegular;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  src: url("assets/fonts/lemonmilk_regular.otf");
+}

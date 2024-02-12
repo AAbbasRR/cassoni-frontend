@@ -1,0 +1,80 @@
+.footer {
+  background-color: #fff !important;
+  min-height: 15rem;
+  width: 100%;
+
+  &__emptybox {
+    height: 5rem;
+  }
+
+  &__copyright {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 5rem;
+    color: #454545 !important;
+
+    &__languageBox {
+      display: flex;
+      flex-direction: row;
+      gap: 0.3rem;
+      align-items: center;
+      cursor: pointer;
+
+      &__language {
+        text-transform: uppercase;
+        border-bottom: 1px solid;
+        font-size: 0.9rem;
+      }
+    }
+
+    &__text {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    @media screen and (max-width: 1100px) {
+      & {
+        padding: 1rem 2rem;
+      }
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  @media screen and (max-width: 700px) {
+    & {
+      flex-direction: column;
+    }
+  }
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3rem !important;
+  cursor: pointer;
+
+  @media screen and (max-width: 900px) {
+    & {
+      font-size: 2.5rem !important;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    & {
+      font-size: 2rem !important;
+    }
+  }
+}

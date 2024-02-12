@@ -1,0 +1,14 @@
+.buttonMain {
+  width: fit-content;
+  padding: 1rem 3rem;
+  border: 1px solid #212121;
+  border-radius: 2rem;
+  background-color: rgba(8, 8, 8, 0.1);
+  transition: 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px #19110b;
+    transition: 0.4s;
+  }
+}
