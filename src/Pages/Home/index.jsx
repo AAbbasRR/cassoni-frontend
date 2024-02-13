@@ -47,6 +47,8 @@ const Home = () => {
             <div className={style.videoPlayerBox}>
               <video
                 ref={videoRef}
+                preLoad
+                playsInline
                 autoPlay
                 muted
                 style={mainVideo?.filter_bw ? { filter: "grayscale(100%) brightness(30%)" } : {}}
