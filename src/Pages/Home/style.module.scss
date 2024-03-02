@@ -49,6 +49,20 @@
   font-size: 1.7rem !important;
 }
 
+.gridImage {
+  padding: 3rem 40px 3rem 16px !important;
+  margin: 0px !important;
+  width: 100% !important;
+
+  &__item {
+    display: flex !important;
+    flex-direction: column !important;
+    &__img {
+      width: 100%;
+    }
+  }
+}
+
 .emptyBody {
   height: 20vh;
 }
