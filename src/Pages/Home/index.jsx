@@ -77,12 +77,14 @@ const Home = () => {
       </div>
       <Grid container spacing={3} className={style.gridImage}>
         {gridImages?.map((node, index) => (
-          <Grid className={style.gridImage__item} item xs={12} md={4} xl={3} key={index}>
-            <img
-              className={style.gridImageContainer__item__img}
-              src={node?.image}
-              alt={node?.alt}
-            />
+          <Grid className={style.gridImage__item} item xs={12} md={4} key={index}>
+            <div className={style.gridImage__item__container}>
+              <img
+                className={style.gridImage__item__container__img}
+                src={node?.image}
+                alt={node?.alt}
+              />
+            </div>
             <h6 className={`font_light ${style.gridImage__item__caption}`}>{node?.caption}</h6>
           </Grid>
         ))}
