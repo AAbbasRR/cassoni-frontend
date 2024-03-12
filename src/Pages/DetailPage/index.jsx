@@ -22,18 +22,19 @@ const DetaipPage = () => {
       video.play();
     }
   }, [slug]);
+  console.log(new RegExp(`src="${process.env.REACT_APP_MEDIA_BASE_NAME}`, "g"),)
 
   const getPageDetailData = () => {
     axios.get(`public/settings/image/detail/${slug}/`).then((res) => {
       setData({
         ...res.data,
         main_image_content: res.data.main_image_content.replace(
-          /src="\/media/g,
-          `src="${process.env.REACT_APP_BACKEND_BASE_URL}/media`
+          new RegExp(`src="/${process.env.REACT_APP_MEDIA_BASE_NAME}`, "g"),
+          `src="${process.env.REACT_APP_BACKEND_BASE_URL}/${process.env.REACT_APP_MEDIA_BASE_NAME}`
         ),
         content: res.data.content.replace(
-          /src="\/media/g,
-          `src="${process.env.REACT_APP_BACKEND_BASE_URL}/media`
+          new RegExp(`src="/${process.env.REACT_APP_MEDIA_BASE_NAME}`, "g"),
+          `src="${process.env.REACT_APP_BACKEND_BASE_URL}/${process.env.REACT_APP_MEDIA_BASE_NAME}`
         ),
       });
     });

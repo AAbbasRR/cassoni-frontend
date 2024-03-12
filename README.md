@@ -8,7 +8,7 @@ env variables:
 
     # ___Project Setup___ #
     REACT_APP_BACKEND_BASE_URL = url *
-    REACT_APP_GOOGLE_OAUT_KEY = string *
+    REACT_APP_MEDIA_BASE_NAME = string *
 
 
 How To Run Docker Building :question:

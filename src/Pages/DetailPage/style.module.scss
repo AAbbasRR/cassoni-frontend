@@ -45,6 +45,10 @@
   cursor: pointer;
 }
 
+.icon {
+  font-size: 1.7rem !important;
+}
+
 .scrollComponent {
   position: absolute;
   bottom: 2%;
@@ -119,7 +123,7 @@
   }
 }
 
-.content{
+.content {
   padding: 2rem 4rem;
 }
 
