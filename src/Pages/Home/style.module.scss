@@ -65,9 +65,23 @@
       &__img {
         width: 100%;
         transition: transform 0.3s ease;
+        cursor: pointer;
         &:hover {
           transform: scale(1.2);
         }
+      }
+    }
+    &__caption {
+      font-size: 16px !important;
+      font-weight: bold !important;
+      margin-top: 20px !important;
+      cursor: pointer !important;
+      transition: 0.4s !important;
+      text-decoration: none;
+      color: #212121;
+      &:hover {
+        color: #fabd72 !important;
+        transition: 0.4s !important;
       }
     }
   }

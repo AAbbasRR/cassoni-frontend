@@ -3,6 +3,7 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import Footer from "Layouts/Footer";
 import Navbar from "Layouts/Navbar";
 import Grid from "@mui/material/Grid";
+import { Link } from "react-router-dom";
 import { useRef, useState, useEffect } from "react";
 import axios from "utils/axios";
 import style from "./style.module.scss";
@@ -79,13 +80,17 @@ const Home = () => {
         {gridImages?.map((node, index) => (
           <Grid className={style.gridImage__item} item xs={12} md={4} key={index}>
             <div className={style.gridImage__item__container}>
-              <img
-                className={style.gridImage__item__container__img}
-                src={node?.image}
-                alt={node?.alt}
-              />
+              <Link to={`/${node?.slug}`}>
+                <img
+                  className={style.gridImage__item__container__img}
+                  src={node?.image}
+                  alt={node?.alt}
+                />
+              </Link>
             </div>
-            <h6 className={`font_light ${style.gridImage__item__caption}`}>{node?.caption}</h6>
+            <Link className={`font_light ${style.gridImage__item__caption}`} to={`/${node?.slug}`}>
+              {node?.caption}
+            </Link>
           </Grid>
         ))}
       </Grid>
