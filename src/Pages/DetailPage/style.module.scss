@@ -99,6 +99,8 @@
   position: relative;
   &__img {
     width: 100%;
+    height: 100vh;
+    object-fit: cover;
   }
   &__contentBox {
     width: 100vw;
@@ -129,6 +131,19 @@
 
 .emptyBody {
   height: 5vh;
+}
+
+@media screen and (max-width: 1100px) {
+  .content {
+    padding: 2rem 2rem;
+
+    img{
+      width: 100% !important;
+      height: auto !important;
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+  }
 }
 
 @keyframes line {
